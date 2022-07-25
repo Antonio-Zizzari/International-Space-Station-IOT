@@ -55,6 +55,8 @@ table2 = dynamodb.create_table(
 print('Table1', table1, 'created!')
 print('Table2', table2, 'created!')
 
+#creating the log group
+
 client = boto3.client('logs', endpoint_url=CONFIG.ENDPOINT_URL)
 retention_period_in_days = 7
 
