@@ -79,9 +79,7 @@ Install and configure the AWS CLI:
 	pip install flask
 	pip install flask-login
 	pip install flask-sqlalchemy
-	sudo npm install -g dynamodb-admin
-
-	
+	sudo npm install -g dynamodb-admin	
 	```
 # Setting up the environment
 1. Clone the repository:
