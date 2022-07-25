@@ -14,6 +14,7 @@ URL=DefaultConfig.ENDPOINT_URL
 ROOMS = DefaultData.ROOMS
 today = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
+#simulating all the iot device at ones
 air_gas(URL,today,ROOMS)
 air_humidity(URL,today,ROOMS)
 air_temperature(URL,today,ROOMS)
