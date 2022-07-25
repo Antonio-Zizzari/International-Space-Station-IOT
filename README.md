@@ -102,7 +102,8 @@ Install and configure the AWS CLI:
 	python3 DynamoDB/createTable.py
 	```
 4. Create and check the SQS queue:
-	```aws sqs create-queue --queue-name room1 --endpoint-url=http://localhost:4566
+	```
+	aws sqs create-queue --queue-name room1 --endpoint-url=http://localhost:4566
 	aws sqs create-queue --queue-name room2 --endpoint-url=http://localhost:4566
 	aws sqs create-queue --queue-name room3 --endpoint-url=http://localhost:4566
 	aws sqs create-queue --queue-name candle --endpoint-url=http://localhost:4566
