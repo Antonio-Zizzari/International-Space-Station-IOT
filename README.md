@@ -3,7 +3,7 @@
 
 ## Overview
 
-The International Space Station (often abbreviated to ISS - International Space Station) is, as the name suggests, a space station that is in low earth orbit. Its realization began in 1998 thanks to the collaboration between the USA (NASA), Russia (Roscosmos), Europe (ESA), Japan (JAXA) and Canada (CSA-ASC) and, within it, a lot of research is carried out in different fields - such as botany, medicine and materials sciences. The structure is made up of 17 modules assembled together at an altitude of about 400 km from the earth's surface and with a speed of about 28 thousand km / h. But what is the use of automated atmosphere management? Why are they doing experiments on board? Couldn't they do it here on Earth?
+The International Space Station (often abbreviated to ISS - International Space Station) is, as the name suggests, a space station that is in low earth orbit. Its realization began in 1998 thanks to the collaboration between the USA (NASA), Russia (Roscosmos), Europe (ESA), Japan (JAXA) and Canada (CSA-ASC) and, within it, a lot of research is carried out in different fields - such as botany, medicine and materials sciences. The structure is made up of 17 modules assembled together at an altitude of about 400 km from the earth's surface and with a speed of about 28 thousand km/h. But what is the use of automated atmosphere management? Why are they doing experiments on board? Couldn't they do it here on Earth?
 
 How is the Space Station made?
 
@@ -58,6 +58,7 @@ Finally we have the website where it is possible to see in real time thanks to a
 4. Flask
 5. (Optional) nodejs for database interface
 6. (Optional) telegram bot
+7. (Optional) PyCharm
 
 #### **Prerequisites fast guide:**
 - Docker: https://docs.docker.com/engine/install/ubuntu/
