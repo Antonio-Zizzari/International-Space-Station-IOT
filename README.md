@@ -131,7 +131,7 @@ Install and configure the AWS CLI:
 	aws iam put-role-policy --role-name lambdarole --policy-name lambdapolicy --policy-document file://ServerlessFunction/policy.json --endpoint-url=http://localhost:4566
 	```
 
-3.  Create the zip file, move in the folder 'code'
+3.  Create the zip file, move in the folder 'code'(Make sure that config.py is configurated)
 	```
 	cd ServerlessFunction
 	zip -j data.zip dataFunc.py ../config.py ../globalData.py
