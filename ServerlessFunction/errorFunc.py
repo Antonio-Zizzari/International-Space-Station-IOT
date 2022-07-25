@@ -39,6 +39,7 @@ def lambda_handler(event, context):
                     body_write = ' The IOT device %s, inthe room %s had problems on the date %s.' % (device, room,error_date)
 
                 message.delete()
+                #send a message to telegram
                 if (CONFIG.TELEGRAM_SWITCH == 'ON'):
                     requests.get(
                         'https://api.telegram.org/bot' + CONFIG.TOKEN_TELEGRAM_BOT + '/sendMessage?chat_id=' + CONFIG.ID_PRODUCER + '&parse_mode=Markdown&text=' + str(

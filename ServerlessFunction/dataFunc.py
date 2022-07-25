@@ -49,18 +49,20 @@ def lambda_handler(event, context):
 
                     sqs2 = boto3.resource('sqs', endpoint_url=CONFIG.ENDPOINT_URL)
                     queue2 = sqs2.get_queue_by_name(QueueName='OnOffOxygen')
+                    #if the oxygen is too much, we need to close the oxygen valves
+                    #or open it if oxygen is too low
                     if oxygen == '':
-                        test=1
-                    elif float(oxygen) > 50:
+                        test=1 #do nothing
+                    elif float(oxygen) > 50: #this is a fake request to an iot device
                         msg_body = '{"operation": "close"}'
                         queue2.send_message(MessageBody=msg_body)
                         print("requests.get('https://OnOffOxygen?operation=close")
-                    else:
+                    else:#this is a fake request to an iot device
                         msg_body = '{"operation": "open"}'
                         queue2.send_message(MessageBody=msg_body)
                         print("requests.get('https://OnOffOxygen?operation=open")
 
-
+                    #savings data collected from the iot devices
                     item = {
                         'room': room,
                         'date': str(date),

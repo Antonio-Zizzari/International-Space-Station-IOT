@@ -56,7 +56,7 @@ def lambda_handler(event, context):
                                 }
                             }
                         }
-
+                        #the mail will be sended but is runned in local by localstak so it is like a "fake request"
                         response = client.send_email(
                             Source=CONFIG.EMAIL_ISS,
                             Destination={
@@ -68,7 +68,7 @@ def lambda_handler(event, context):
                             },
                             Message=message_mail
                         )
-
+                        #log the mail sended to the providers
                         log_client = boto3.client('logs', endpoint_url=CONFIG.ENDPOINT_URL)
 
                         log_event = {
