@@ -73,11 +73,15 @@ Install and configure the AWS CLI:
 - Configuration: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
 	
 -	commands to run:
-	``` sudo apt install npm
+	```
+	sudo apt install npm
 	sudo apt update
 	pip install flask
 	pip install flask-login
 	pip install flask-sqlalchemy
+	sudo npm install -g dynamodb-admin
+
+	
 	```
 # Setting up the environment
 1. Clone the repository:
